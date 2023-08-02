@@ -1,8 +1,7 @@
 <template>
     <div class="font-serif">
         <div class=" ">
-            <div class="grid grid-cols-4 md:grid-cols-2">
-
+            <div class="grid grid-cols-2">
                 <div class="p-4 bg-red-600 ">
                     <h5 class="text-2xl font-semibold ">Become an Instructor</h5>
                     <p class="mt-2 text-white">Choose from hundreds of free courses, or get a degree or certificate at a
@@ -31,7 +30,6 @@
                         <span class="m-2">Get Started</span>
                     </a>
                 </div>
-
             </div>
         </div>
 

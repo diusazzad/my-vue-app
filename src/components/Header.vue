@@ -1,57 +1,113 @@
 <template>
-  <header class="w-full h-auto">
-    <!-- top header -->
-    <div class="" id="top-header">
-      <div class="" id="container">
-        <div class="">
-          <div class="lg:w-6/12">
-            <ul
-              class="sm:text-xs sm:items-center sm:p-2 sm:grid sm:grid-cols-3 text-white font-bold"
-            >
-              <li class="flex items-center gap-1">
-                <i class="bx bx-phone-call"></i>
-                <span class="sm:hidden">Contact support</span>
-                <a href="tel:+502464674%20" class="">+502 464 674</a>
-              </li>
-              <li class="flex items-center gap-1">
-                <i class="bx bx-map"></i>
-                <span class="sm:hidden">Our location</span>
-                <a href="#" class="block md:inline">New York, USA</a>
-              </li>
-              <li class="flex items-center gap-1">
-                <i class="bx bx-envelope"></i>
-                <span class="sm:hidden">Contact email</span>
-                <a href="mailto:hello@edali.com" class="">hello@edali.com</a>
-              </li>
-            </ul>
+  <header class="w-full max-h-44 flex flex-col" id="header-area">
+    <!-- Top Headbar -->
+    <div class="bg-red-600 h-24 w-full p-6">
+      <div class="grid grid-cols-3">
+        <div class="col-span-2 grid grid-cols-3 items-center">
+          <div class="grid grid-cols-3 place-items-center">
+            <div class="row-span-3">
+              <i class="bx bx-phone-call text-white text-lg pl-10"></i>
+            </div>
+            <div class="col-span-2">
+              <span class="text-white font-semibold">Contact support:</span>
+            </div>
+            <div class="col-span-2">
+              <a href="tel:+502464674" class="text-white font-semibold">+502 464 674</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 items-center">
+            <div class="row-span-3">
+              <i class="bx bx-map text-white text-lg pl-10"></i>
+            </div>
+            <div class="col-span-2">
+              <span class="text-white font-semibold">Our location:</span>
+            </div>
+            <div class="col-span-2">
+              <a href="#" class="text-white font-semibold block">New York, USA</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 items-center">
+            <div class="row-span-3">
+              <i class="bx bx-envelope text-white text-lg pl-10"></i>
+            </div>
+            <div class="col-span-2">
+              <span class="text-white font-semibold">Contact email:</span>
+            </div>
+            <div class="col-span-2">
+              <a href="mailto:hello@edali.com" class="text-white font-semibold"
+                >hello@edali.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-1 flex items-center justify-end">
+          <div class="bg-white text-red-600 justify-center flex items-center p-2 gap-4">
+            <i class="bx bx-log-in icon-arrow after"></i>
+            <a href="#" class="font-semibold text-xl">Login</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Start Navbar Area -->
-    <div class="navbar-area bg-white lg:bg-transparent lg:p-0 p-4" id="navbarArea">
-      <div class="lg:block">
-        <div class="container sm:grid sm:grid-cols-3">
-          <div class="col-span-2">
-            <a href="">
-              <h2>Edali</h2>
-            </a>
-          </div>
-          <div class=" flex justify-end items-center gap-2">
-            <i class="bx bx-cart-alt"></i>
-            <i class="bx bx-search"></i>
-            <i class='bx bx-menu'></i>
-          </div>
+    <!-- ----------------------------------------------------------------------------
+            ----------------------------------------------------------Navbar Area -->
+    <div class="bg-white text-center h-20 flex items-center" id="">
+      <div class="grid grid-cols-4">
+        <div class="col-span-1 w-fit">
+          <a href="#" class="font-bold text-3xl">Edali</a>
+        </div>
+        <div class="col-span-2">
+          <ul class="grid grid-cols-7 gap-2">
+            <li class="group relative">
+              <a href="#" class="nav-link group-hover:bg-blue-600 group-hover:text-white"
+                >Home</a
+              >
+              <ul class="hidden absolute bg-white w-48 py-2 shadow-lg">
+                <li class="">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-blue-600 hover:text-white"
+                    >Online Education Portal</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-blue-600 hover:text-white"
+                    >Online Courses &amp; Training Portal</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="group relative">
+              <a href="#" class="nav-link group-hover:bg-blue-600 group-hover:text-white"
+                >About Us</a
+              >
+              <ul class="hidden absolute bg-white w-48 py-2 shadow-lg">
+                <li class="">
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-800 hover:bg-blue-600 hover:text-white"
+                    >About Us 1</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- Add more menu items with submenus here -->
+          </ul>
+        </div>
 
+        <div class="content-center flex place-content-end">
+          <div class="">
+            <i class="bx bx-cart-alt text-2xl"></i>
+            <i class="bx bx-search text-2xl"></i>
+            <i class="bx bx-menu text-2xl"></i>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- End Navbar Area -->
-
-    <!-- Start Sticky Navbar Area -->
-
-    <!-- End Sticky Navbar Area -->
+    <!-- Sticky Navbar Area (if needed) -->
   </header>
 </template>
 
@@ -59,8 +115,4 @@
 import "boxicons/css/boxicons.min.css";
 </script>
 
-<style scoped>
-#top-header {
-  background-color: #ff1949;
-}
-</style>
+<style scoped></style>
