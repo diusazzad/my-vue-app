@@ -9,7 +9,7 @@ export default {
             spacing: {
                 '1.5': '0.375rem', // 1.5 * 0.25rem (default spacing scale)
                 // Add more custom gutter spacing values if needed
-              },
+            },
             colors: {
                 primary: "#6EC1E4",
                 secondary: "#54595F",
